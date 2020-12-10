@@ -9,12 +9,13 @@
 </head>
 <body>
 <h2>Hyper news</h2>
-<div>
-<!--    <form method="get" action="/news/">-->
-<!--        {% csrf_token %}-->
-<!--        <input type="text" placeholder="query.." name="q">-->
-<!--        <button type="submit"></button>-->
-<!--    </form>-->
+<div class="container">
+    <div class="search">
+         <form method="get" action="/news/">
+        {% csrf_token %}
+        <input type="text" placeholder="..." name="q">
+    </form>
+    </div>
 {% for news in news_pages %}
 <h4>{{ news.date }}</h4>
 
@@ -25,7 +26,6 @@
     </ul>
 
 {% endfor %}
-<!--<a href="/news/create/" target="_blank">Write Article</a>-->
 <a href="/news/create/" target="_blank" id="write">Write Article</a>
 </div>
 </body>

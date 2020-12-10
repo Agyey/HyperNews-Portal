@@ -16,22 +16,27 @@ h2 {
     box-shadow: 5px 5px 0 1px #222831;
 }
 
-div {
+.container {
     margin: 0 5vw;
-    padding: 5vw;
+    padding: 2vh 5vw 5vh 5vw;
     background: #30475e;
     box-shadow: 5px 5px 0 1px #222831;
 }
 
-input{
-    width: 100%;
+.search{
+    margin: 2vmin 0 12vmin 0;
+    padding-bottom: 2vh;
 }
 
-form{
-    display: inline-block;
-    margin: 1vh;
-    padding: 1vh;
+.search input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 100%;
+    background: white;
 }
+
 
 h4 {
     font-family: 'Poppins', sans-serif;
