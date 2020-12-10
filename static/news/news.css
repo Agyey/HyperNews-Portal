@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #e8e8e8;
+}
+
+* {
+    margin: 0;
+}
+
+h2 {
+    padding: 2vh 2vw;
+    background: #f05454;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+div {
+    margin: 0 5vw;
+    padding: 5vw;
+    background: #30475e;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+p#time{
+    font-family: 'Poppins', sans-serif;
+    padding: 1vw;
+    margin: 0 1vw;
+    background: #f05454;
+    color: #e8e8e8;
+}
+
+p{
+    background: #e8e8e8;
+    padding: 4vh 2vw;
+    margin: 2vh;
+}
+
+
+a#main{
+    margin: 1vw;
+    margin-bottom: -1vw;
+}
+
+a:link, a:visited {
+    background: #222831;
+    border: #222831 solid 2px;
+    color: #e8e8e8;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    border: #222831 solid 2px;
+    color: #222831;
+    background: #e8e8e8;
+}

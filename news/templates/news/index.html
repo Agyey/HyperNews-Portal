@@ -3,8 +3,30 @@
 <head>
     <title>HyperNews Portal</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/news/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<p>Coming soon</p>
+<h2>Hyper news</h2>
+<div>
+<!--    <form method="get" action="/news/">-->
+<!--        {% csrf_token %}-->
+<!--        <input type="text" placeholder="query.." name="q">-->
+<!--        <button type="submit"></button>-->
+<!--    </form>-->
+{% for news in news_pages %}
+<h4>{{ news.date }}</h4>
+
+    <ul>
+        {% for page in news.pages %}
+        <li><a target="_blank" href="/news/{{page.link}}/">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endfor %}
+<!--<a href="/news/create/" target="_blank">Write Article</a>-->
+<a href="/news/create/" target="_blank" id="write">Write Article</a>
+</div>
 </body>
 </html>

@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #e8e8e8;
+}
+
+* {
+    margin: 0;
+}
+
+h2 {
+    padding: 2vh 2vw;
+    background: #f05454;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+div {
+    margin: 0 5vw;
+    padding: 5vw;
+    background: #30475e;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+input[type=text] {
+  padding: 1vh 1vw;
+  margin: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form{
+    padding: 1vw;
+    background: #222831;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    color: #e8e8e8;
+}
+
+
+button{
+    background: #f05454;
+    border: #f05454 solid 2px;
+    color: #222831;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1vw;
+}
+
+button:hover {
+    border: #f05454 solid 2px;
+    color: #e8e8e8;
+    background: #222831;
+    margin: 1vw;
+    display: inline-flex;
+}
+
+a#main{
+    display: inline-flex;
+    margin: 1vw;
+    margin-bottom: -1vw;
+}
+
+a:link, a:visited {
+    background: #222831;
+    border: #222831 solid 2px;
+    color: #e8e8e8;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    border: #222831 solid 2px;
+    color: #222831;
+    background: #e8e8e8;
+}

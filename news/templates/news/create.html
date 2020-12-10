@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HyperNews Portal</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/news/create.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h2>Write an article</h2>
+<div>
+<form method="post" action="/news/create/">
+{% csrf_token %}
+<table>{{ news.as_table }}</table>
+<button type="submit">Create</button>
+</form>
+<!--<a href="/news/" target="_blank">All News</a>-->
+<a href="/news/" target="_blank" id="main">All News</a>
+</div>
+</body>
+</html>

@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import RedirectView
 from news.views import HomeView
+from news.views import CreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,6 @@ urlpatterns = [
     path('news/', HomeView.as_view()),
     path('', RedirectView.as_view(url='news/')),
     path('news', RedirectView.as_view(url='news/')),
+    path('news/create/', CreateView.as_view()),
+    path('news/create', RedirectView.as_view(url='news/create/')),
 ]

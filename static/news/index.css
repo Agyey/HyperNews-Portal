@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #e8e8e8;
+}
+
+* {
+    margin: 0;
+}
+
+h2 {
+    padding: 2vh 2vw;
+    background: #f05454;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+div {
+    margin: 0 5vw;
+    padding: 5vw;
+    background: #30475e;
+    box-shadow: 5px 5px 0 1px #222831;
+}
+
+input{
+    width: 100%;
+}
+
+form{
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    padding: 2vw;
+    margin: 0 1vw;
+    background: #f05454;
+    color: #e8e8e8;
+    box-shadow: 0px 0px 0px 1vmax #222831;
+}
+
+ul {
+    list-style-type: None;
+    margin: 0 1vw;
+    padding: 5vh 5vw;
+    background: #e8e8e8;
+    margin-bottom: 2vw;
+}
+
+li {
+    display: inline-block;
+    /*padding: 1vw;*/
+    /*border: #f05454 solid 2px;*/
+    /*width: max-content;*/
+    /*margin-right: -5vw;*/
+    margin-bottom: -1px;
+}
+
+a#write{
+    margin: 1vw;
+    margin-bottom: -1vw;
+}
+
+a:link, a:visited {
+    background: #222831;
+    border: #222831 solid 2px;
+    color: #e8e8e8;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    border: #222831 solid 2px;
+    color: #222831;
+    background: #e8e8e8;
+}

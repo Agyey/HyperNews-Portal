@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>HyperNews Portal</title>
+    <link rel="stylesheet" href="/static/news/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <h2>{{ news.title }}</h2>
-<p>{{ news.created }}</p>
-<p>{{ news.text }}</p>
-<a href="/news/" target="_blank">Main Page</a>
+<div>
+    <p id="time">{{ news.created }}</p>
+<!--    <p>{{ news.created }}</p>-->
+    <p>{{ news.text }}</p>
+<!--    <a href="/news/" target="_blank">All News</a>-->
+    <a href="/news/" target="_blank" id="main">All News</a>
+</div>
 </body>
 </html>
